@@ -43,11 +43,11 @@ public class FichaAbyssal {
     private Integer atributoVigor;
 
     //NOVO
-//    private Integer modificadorAgilidade = (this.atributoAgilidade - 1) * 2;
-//    private Integer modificadorForca = (this.atributoForca - 1) * 2;
-//    private Integer modificadorPresenca = (this.atributoPresenca - 1) * 2;    
-//    private Integer modificadorInteligencia = (this.atributoInteligencia - 1) * 2;
-//    private Integer modificadorVigor = (this.atributoVigor - 1) * 2;
+    private Integer modificadorAgilidade = (this.atributoAgilidade - 1) * 2;
+    private Integer modificadorForca = (this.atributoForca - 1) * 2;
+    private Integer modificadorPresenca = (this.atributoPresenca - 1) * 2;
+    private Integer modificadorInteligencia = (this.atributoInteligencia - 1) * 2;
+    private Integer modificadorVigor = (this.atributoVigor - 1) * 2;
 
     @Enumerated(EnumType.STRING)
     private ClassesOrdemParanormal classes;
@@ -232,6 +232,16 @@ public class FichaAbyssal {
             }
         }
     }
+
+    private void modificadoresAtributos(){
+        //    private Integer modificadorAgilidade = (this.atributoAgilidade - 1) * 2;
+//    private Integer modificadorForca = (this.atributoForca - 1) * 2;
+//    private Integer modificadorPresenca = (this.atributoPresenca - 1) * 2;
+//    private Integer modificadorInteligencia = (this.atributoInteligencia - 1) * 2;
+ modificadorVigor = (this.atributoVigor - 1) * 2;
+    }
+
+
     //NOVO (Terminar)
     private void condicoesAtiva(){
         
