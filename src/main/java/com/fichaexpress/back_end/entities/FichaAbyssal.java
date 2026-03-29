@@ -36,11 +36,11 @@ public class FichaAbyssal {
     private Integer nex;
     private Integer ne;
 
-    private Integer atributoAgilidade;
-    private Integer atributoForca;
-    private Integer atributoPresenca;
-    private Integer atributoInteligencia;
-    private Integer atributoVigor;
+    private Integer atributoAgilidade = 0 ;
+    private Integer atributoForca = 0;
+    private Integer atributoPresenca = 0;
+    private Integer atributoInteligencia = 0;
+    private Integer atributoVigor = 0;
 
     //NOVO
     private Integer modificadorAgilidade = (this.atributoAgilidade - 1) * 2;
@@ -192,7 +192,7 @@ public class FichaAbyssal {
     //NOVO
     private void calculoDefesa(){
 
-        Integer modificadorAgilidade = (this.atributoAgilidade - 1) * 2;
+        modificadorAgilidade = (this.atributoAgilidade - 1) * 2;
 
         //Será inserido assim que o Player ativar o Item ou Ritual
         Integer bonusDeRitualDefesa = 0;
@@ -235,10 +235,10 @@ public class FichaAbyssal {
 
     private void modificadoresAtributos(){
         //    private Integer modificadorAgilidade = (this.atributoAgilidade - 1) * 2;
-//    private Integer modificadorForca = (this.atributoForca - 1) * 2;
-//    private Integer modificadorPresenca = (this.atributoPresenca - 1) * 2;
-//    private Integer modificadorInteligencia = (this.atributoInteligencia - 1) * 2;
- modificadorVigor = (this.atributoVigor - 1) * 2;
+        //    private Integer modificadorForca = (this.atributoForca - 1) * 2;
+        //    private Integer modificadorPresenca = (this.atributoPresenca - 1) * 2;
+        //    private Integer modificadorInteligencia = (this.atributoInteligencia - 1) * 2;
+        //    private Integer modificadorVigor = (this.atributoVigor - 1) * 2;
     }
 
 
